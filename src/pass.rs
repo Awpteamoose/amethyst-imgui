@@ -544,7 +544,7 @@ fn build_imgui_pipeline<B: Backend>(
 					mask:  pso::ColorMask::ALL, 
 					blend: Some(pso::BlendState::ALPHA) 
 				}])
-				.with_depth_test(pso::DepthTest::PASS_WRITE),
+				.with_depth_test(pso::DepthTest::PASS_TEST),
 		)
 		.build(factory, None);
 
